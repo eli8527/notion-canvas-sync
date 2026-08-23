@@ -1,0 +1,39 @@
+{
+	"name": "notion-canvas-sync",
+	"version": "0.1.0",
+	"description": "Sync active Canvas LMS students into a managed Notion database.",
+	"private": true,
+	"type": "module",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/eli8527/notion-canvas-sync.git"
+	},
+	"bugs": {
+		"url": "https://github.com/eli8527/notion-canvas-sync/issues"
+	},
+	"homepage": "https://github.com/eli8527/notion-canvas-sync#readme",
+	"keywords": [
+		"canvas-lms",
+		"notion",
+		"notion-workers",
+		"sync"
+	],
+	"scripts": {
+		"build": "tsc",
+		"check": "tsc --noEmit",
+		"test": "tsx --test test/**/*.test.ts"
+	},
+	"engines": {
+		"node": ">=22.0.0",
+		"npm": ">=10.9.2"
+	},
+	"devDependencies": {
+		"@types/node": "^22.9.0",
+		"tsx": "^4.20.6",
+		"typescript": "^5.8.0"
+	},
+	"dependencies": {
+		"@notionhq/workers": "^0.8.11"
+	}
+}

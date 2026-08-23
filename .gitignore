@@ -1,0 +1,18 @@
+.env
+.env.*
+!.env.example
+dist/
+node_modules/
+.dev-shell/
+workers.*.json
+workers.json
+
+# Local starter/reference files installed by the Notion Workers scaffold.
+.agents/
+.claude/
+.examples/
+.claudeignore
+.codexignore
+AGENTS.md
+CLAUDE.md
+docs/custom-tool.png

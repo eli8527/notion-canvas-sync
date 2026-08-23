@@ -1,0 +1,30 @@
+name: Bug report
+description: Report a reproducible problem with the sync.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include Canvas tokens, student data, or Notion workspace identifiers.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit or version
+  - type: textarea
+    id: logs
+    attributes:
+      label: Redacted logs
+      render: shell
